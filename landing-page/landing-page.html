@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Serviços de TI</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe, .video-container object, .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo da Empresa"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastrar Cliente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="solicitacao.html">Solicitar Serviços</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Body -->
+    <div class="container mt-5">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <img src="funcionario1.jpg" alt="Funcionário 1" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-3">
+                <img src="funcionario2.jpg" alt="Funcionário 2" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-3">
+                <img src="funcionario3.jpg" alt="Funcionário 3" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-3">
+                <img src="funcionario4.jpg" alt="Funcionário 4" class="img-fluid mb-3">
+            </div>
+        </div>
+        <div class="mt-5">
+            <h2>Serviços de TI Oferecidos</h2>
+            <p>Aqui você pode encontrar uma lista dos serviços de TI que oferecemos.</p>
+            <ul>
+                <li>Serviço 1</li>
+                <li>Serviço 2</li>
+                <li>Serviço 3</li>
+                <li>Serviço 4</li>
+            </ul>
+        </div>
+        <div class="mt-5">
+            <h2>Fundadores</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Cargo</th>
+                        <th>Nome</th>
+                        <th>CV</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CEO</td>
+                        <td>Lucas Barros Fernandes</td>
+                        <td>Experiência em...</td>
+                    </tr>
+                    <tr>
+                        <td>CTO</td>
+                        <td>Maria Souza</td>
+                        <td>Experiência em...</td>
+                    </tr>
+                    <tr>
+                        <td>COO</td>
+                        <td>Pedro Oliveira</td>
+                        <td>Experiência em...</td>
+                    </tr>
+                    <tr>
+                        <td>CFO</td>
+                        <td>Ana Santos</td>
+                        <td>Experiência em...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5 bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contatos</h5>
+                    <ul>
+                        <li>Telefone: (00) 1234-5678</li>
+                        <li>WhatsApp: (00) 98765-4321</li>
+                        <li><a href="mailto:contato@empresa.com">Email: contato@empresa.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Endereço</h5>
+                    <p>Rua ABC, 123 - Cidade</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Formas de Pagamento</h5>
+                    <img src="visa.png" alt="Visa" class="mr-2">
+                    <img src="mastercard.png" alt="Mastercard" class="mr-2">
+                    <img src="paypal.png" alt="PayPal">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./landing-page.js"></script>
+</body>
+</html>
