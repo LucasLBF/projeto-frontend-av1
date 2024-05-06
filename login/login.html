@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login de Clientes</title>
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    
+    <div class="div-principal">
+        <img src="img/logo_cesar.png" alt="logo da empresa" id="img_cesar">
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="login" name="login"></input>
+            </div>
+            <div class="form-group">
+                <label for="password">Digite sua senha:</label>
+                <input type="password" id="password"></input>
+            </div>
+            <div id="validacoes">
+            </div>
+            <button type="reset" onclick="limpaVal(); focusLogin()" id="Limpar">Limpar</button>
+            <button type="button" onclick="limpaVal(); validateFormulario()" id="entrar">Entrar</button>
+
+            <div class="div-links">
+                <a href="cadastro.html">Cadastre-se</a>
+                <a href="recuperar_senha.html">Esqueceu a senha?</a>
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+
 </body>
+
 </html>
