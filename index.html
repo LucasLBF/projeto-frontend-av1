@@ -9,32 +9,18 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <style>
-      .video-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 30px;
-        height: 0;
-        overflow: hidden;
-      }
-      .video-container iframe,
-      .video-container object,
-      .video-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
   </head>
   <body>
     <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="/index.html"
-          ><img src="src/assets/images/logo_cesar.png" alt="Logo da Empresa"
-        /></a>
+        <a class="navbar-brand" href="/index.html">
+          <img
+            class="logo"
+            src="src/assets/images/logo_cesar.png"
+            alt="Logo da Empresa"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -68,40 +54,46 @@
 
     <!-- Body -->
     <div class="container mt-5">
-      <div class="video-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/video_id"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+      <div class="start-div">
+        <div class="partner-call">
+          <h4>A maior empresa de consultoria do Recife</h4>
+          <h1>Parceiro global de engenharia digital</h1>
+          <span href="/src/pages/login.html"> Trabalhe conosco </span>
+        </div>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/MaN0iVrcF50"
+            frameborder="0"
+          >
+          </iframe>
+        </div>
       </div>
-      <div class="row mt-5">
+
+      <div class="funcionario row mt-5">
         <div class="col-md-3">
           <img
-            src="funcionario1.jpg"
+            src="src/assets/images/funcionario1.jpg"
             alt="Funcionário 1"
             class="img-fluid mb-3"
           />
         </div>
         <div class="col-md-3">
           <img
-            src="funcionario2.jpg"
+            src="src/assets/images/funcionario2.png"
             alt="Funcionário 2"
             class="img-fluid mb-3"
           />
         </div>
         <div class="col-md-3">
           <img
-            src="funcionario3.jpg"
+            src="src/assets/images/funcionario3.jpg"
             alt="Funcionário 3"
             class="img-fluid mb-3"
           />
         </div>
         <div class="col-md-3">
           <img
-            src="funcionario4.jpg"
+            src="src/assets/images/funcionario4.jpeg"
             alt="Funcionário 4"
             class="img-fluid mb-3"
           />
@@ -114,26 +106,27 @@
         </p>
         <div class="services">
           <span>
-            Global Digital Engineering Partner: Encora accelerates modernization
-            and innovation services to deliver value at scale for digital
-            natives and global enterprises.
+            Parceiro Global de Engenharia Digital: Cesar acelera a modernização
+            e os serviços de inovação para entregar valor em escala para nativos
+            digitais e empresas globais.
           </span>
 
           <span>
-            9,000 Engineers in 17 countries spanning Latin America, Eastern
-            Europe, India, and Southeast Asia
+            9.000 Engenheiros em 17 países abrangendo América Latina, Leste
+            Europa, Índia e Sudeste Asiático
           </span>
           <span>
-            Global Nearshore presence (for Americas, Europe, Asia & Oceania)
-            plus Deep Capabilities in India
+            Presença Global Nearshore (para as Américas, Europa, Ásia e Oceania)
+            além de Profundas Capacidades na Índia
           </span>
           <span>
-            #1 Fastest Growing Engineering Services Company in 2023 per the
-            Everest Group
+            #1 Empresa de Serviços de Engenharia de Crescimento Mais Rápido em
+            2023 pelo Grupo Everest
           </span>
           <span>
-            90% of Encorians work in a certified Great Place To Work®</span
-          >
+            90% dos funcionários do Cesar trabalham em um Great Place To Work®
+            certificado
+          </span>
         </div>
       </div>
       <div class="mt-5">
@@ -150,22 +143,27 @@
             <tr>
               <td>CEO</td>
               <td>Lucas Barros Fernandes</td>
-              <td>Experiência em...</td>
+              <td>Experiência em Direito</td>
             </tr>
             <tr>
               <td>CTO</td>
               <td>Miguel Cabral</td>
-              <td>Experiência em...</td>
+              <td>Experiência em Prompt engineering</td>
             </tr>
             <tr>
               <td>COO</td>
               <td>Pedro Henrique</td>
-              <td>Experiência em...</td>
+              <td>Experiência em Reverse API</td>
             </tr>
             <tr>
               <td>CFO</td>
               <td>Luiz Fernando</td>
-              <td>Experiência em...</td>
+              <td>Experiência em Robotica</td>
+            </tr>
+            <tr>
+              <td>Estagiârio</td>
+              <td>Pedro Leite</td>
+              <td>Experiência em Frontend</td>
             </tr>
           </tbody>
         </table>
@@ -192,11 +190,15 @@
             <h5>Endereço</h5>
             <p>Rua ABC, 123 - Cidade</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 pagamento">
             <h5>Formas de Pagamento</h5>
-            <img src="visa.png" alt="Visa" class="mr-2" />
-            <img src="mastercard.png" alt="Mastercard" class="mr-2" />
-            <img src="paypal.png" alt="PayPal" />
+            <img src="src/assets/images/visa.svg" alt="Visa" class="mr-2" />
+            <img
+              src="src/assets/images/mastercard.png"
+              alt="Mastercard"
+              class="mr-2"
+            />
+            <img src="src/assets/images/paypal.png" alt="PayPal" />
           </div>
         </div>
       </div>
