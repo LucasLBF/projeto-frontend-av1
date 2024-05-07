@@ -1,11 +1,25 @@
 body {
-    padding-top: 56px;
-    font-family: Arial, sans-serif;
+  padding-top: 56px;
+  font-family: Arial, sans-serif;
 }
-h1, h2, h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 img {
-    width: 100px;
-    height: 100px;
+  width: auto;
+  height: 100px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8px;
+  & > span {
+    border: solid;
+    width: max;
+    height: auto;
+    padding: 6px;
+  }
 }
