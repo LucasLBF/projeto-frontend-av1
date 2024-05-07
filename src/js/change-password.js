@@ -85,6 +85,7 @@ function validarFormulario() {
 
 	if (validaSenha(senha, confirmarSenha)) {
 		alert("Validação realizada com sucesso.");
+		window.location.href = "/src/pages/services.html"; 
 	};
 }
 

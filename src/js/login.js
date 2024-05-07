@@ -74,6 +74,7 @@ function validateFormulario() {
 
     if (validatePassword(senha)) {
         alert("Validação realizada com sucesso.");
+        window.location.href = "/src/pages/services.html"; 
     };
 
 }
