@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/sign-up.css"
+</head>
+<body>
+
+    <div class="container-sm mt-5 mb-3">
+        <div class="text-center">
+            <a href="/index.html">
+                <img src="/src/assets/images/logo_cesar.png" alt="Logo da Empresa" style="max-width: 150px;" class="mb-4">
+            </a>
+        </div>
+        <h1 class="text-center">Novo Cadastro</h1>
+        <div id="back-btn-container">
+            <a class="button-primary back-btn" id="back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg>
+                Voltar
+            </a>
+        </div>
+</svg>
+        <form id="sign-up-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmar-senha">Confirmar Senha</label>
+                <input type="password" class="form-control" id="confirmar-senha" placeholder="Confirme sua senha" required>
+            </div>
+            <div class="password-rules">
+                <p class="secondary-title">Instruções de Senha</label>
+                <p>A senha deve conter pelo menos 6 caracteres, incluindo letras maiúsculas, minúsculas, números e pelo menos um dos seguintes caracteres especiais: @#$%&*!?/\|-_+.=()</p>
+                <p>Caracteres não permitidos: "{}[]´`~^:;&lt;&gt;,&quot;&apos;</p>
+            </div>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required>
+            </div>
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" class="form-control" id="data-nascimento" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone Celular/Zap</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" required>
+            </div>
+            <div class="form-group">
+                <label>Estado Civil</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estado-civil" id="solteiro" value="solteiro" checked>
+                    <label class="form-check-label" for="solteiro">
+                        Solteiro(a)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estado-civil" id="casado" value="casado">
+                    <label class="form-check-label" for="casado">
+                        Casado(a)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estado-civil" id="divorciado" value="divorciado">
+                    <label class="form-check-label" for="divorciado">
+                        Divorciado(a)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estado-civil" id="viuvo" value="viuvo">
+                    <label class="form-check-label" for="viuvo">
+                        Viúvo(a)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="escolaridade">Escolaridade</label>
+                <select class="form-control" id="escolaridade">
+                    <option value="1o-incompleto">Primeiro grau incompleto</option>
+                    <option value="1o-completo">Primeiro grau completo</option>
+                    <option value="2o-completo" selected>Segundo grau completo</option>
+                    <option value="superior">Nível superior</option>
+                    <option value="pos-graduado">Pós-graduado</option>
+                </select>
+            </div>
+            <button type="submit" class="btn button-primary">Incluir</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/src/js/sign-up.js"></script>
+</body>
+</html>
