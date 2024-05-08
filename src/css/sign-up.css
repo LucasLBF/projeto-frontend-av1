@@ -1,51 +1,51 @@
 .button-primary {
-    background-color: #ff5100;
-    color: #fff;
-    cursor: pointer;
-    transition: opacity 300ms;
+  background-color: #ff5100;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 300ms;
 }
 
 .button-primary:hover {
-    opacity: 0.8;
-    color: #fff
+  opacity: 0.8;
+  color: #fff;
 }
 
 .password-rules {
-    border: 1px solid #babaca;
-    padding: 8px;
-    background-color: rgba(255, 81, 0, 0.05);
-    margin: 18px 0;
+  border: 1px solid #babaca;
+  padding: 8px;
+  background-color: rgba(255, 81, 0, 0.05);
+  margin: 18px 0;
 }
 
-form p[class=secondary-title] {
-    font-weight: 500;
-    font-size: 18px;
+form p[class="secondary-title"] {
+  font-weight: 500;
+  font-size: 18px;
 }
 
-p[class=secondary-title] ~ p:last-child {
-    color: red;
-    font-weight: 500;
+p[class="secondary-title"] ~ p:last-child {
+  color: red;
+  font-weight: 500;
 }
 
 #back-btn-container {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .back-btn {
-    background-color: #fff;
-    color: #ff5100;
-    opacity: 0.7;
-    transition: opacity 300ms;
+  background-color: #fff;
+  color: #ff5100;
+  opacity: 0.7;
+  transition: opacity 300ms;
 }
 
 .back-btn:link,
 .back-btn:visited,
 .back-btn:hover,
 .back-btn:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .back-btn:hover {
-    color: #ff5100;
-    opacity: 1;
+  color: #ff5100;
+  opacity: 1;
 }
