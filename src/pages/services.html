@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solicitação de Serviços de TI</title>
-    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="/src/css/services.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
   </head>
-  <body>
+  <body onload="load_services()">
     <header class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="/index.html"
@@ -32,92 +31,40 @@
 
     <div class="container p-3">
       <h2>Suas Solicitações de Serviços</h2>
-      <div class="list-group mb-1">
-        <a href="#" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Serviço 1</h5>
-            <small class="text-body-secondary">10020030</small>
-          </div>
-          <p class="mb-1" id="price">R$100.00</p>
-          <p class="mb-1 text-warning" id="status">Ongoing</p>
-          <p class="mb-1" id="deadline">Deadline: 06/05/24</p>
-          <small class="text-body-secondary">10/04/24</small>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Serviço 2</h5>
-            <small class="text-body-secondary">20030040</small>
-          </div>
-          <p class="mb-1" id="price">R$557.90</p>
-          <p class="mb-1 text-danger" id="price">Stopped</p>
-          <p class="mb-1" id="price">Deadline: 20/06/24</p>
-          <small class="text-body-secondary">01/05/24</small>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Serviço 3</h5>
-            <small class="text-body-secondary">30040050</small>
-          </div>
-          <p class="mb-1">R$75.99</p>
-          <p class="mb-1 text-warning">Ongoing</p>
-          <p class="mb-1">Deadline: 14/08/24</p>
-          <small class="text-body-secondary">05/05/24</small>
-        </a>
+      <div class="list-group mb-1" id="service-list">
+
       </div>
     </div>
 
     <div class="container p-3">
-      <h2>Nova Solicição</h2>
+      <h2>Nova Solicitação</h2>
       <!--Serviço, Preço, Prazo, Data, Status, Solicitação-->
       <form>
         <div class="mb-3">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Serviços Disponiveis</option>
-            <option value="1">Serviço 1</option>
-            <option value="2">Serviço 2</option>
-            <option value="3">Serviço 3</option>
-            <option value="4">Serviço 4</option>
-            <option value="5">Serviço 5</option>
+          <select class="form-select" id="select-service" onchange="select_service()" aria-label="Default select example">
+            <option selected>Escolha</option>
+            <option>Serviço 1</option>
+            <option>Serviço 2</option>
+            <option>Serviço 3</option>
           </select>
         </div>
 
         <div class="mb-3">
-          <label>Valor em R$</label>
-          <select class="form-select" aria-label="Default select example">
-            <option value="1">500.00</option>
-            <option value="2">750.00</option>
-            <option value="3">1000.99</option>
-            <option value="4">35.90</option>
-            <option value="5">89.90</option>
-          </select>
+          <label id="service-price">Valor em R$</label>
         </div>
 
         <div class="mb-3">
-          <label>Prazo de Atendimento</label>
-          <select class="form-select" aria-label="Default select example">
-            <option value="1">Data 1</option>
-            <option value="2">Data 2</option>
-            <option value="3">Data 3</option>
-            <option value="4">Data 4</option>
-            <option value="5">Data 5</option>
-          </select>
+          <label id="service-date">Prazo de Atendimento :</label>
         </div>
 
         <div class="mb-3">
-          <label>Data Prevista</label>
-          <select class="form-select" aria-label="Default select example">
-            <option value="1">Atual + Data 1</option>
-            <option value="2">Atual + Data 2</option>
-            <option value="3">Atual + Data 3</option>
-            <option value="4">Atual + Data 4</option>
-            <option value="5">Atual + Data 5</option>
-          </select>
+          <label id="service-deadline">Data Prevista :</label>
         </div>
 
         <div class="mb-3">
           <label for="">EM ELABORAÇÃO</label>
         </div>
-        <button type="submit" onclick="new_service()" class="botao-enviar">
+        <button type="button" onclick="create_service()" class="botao-enviar">
           Enviar
         </button>
       </form>
