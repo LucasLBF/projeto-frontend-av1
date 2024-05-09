@@ -110,7 +110,7 @@ function validateFormulario() {
 
   if (validatePassword(senha)) {
     alert("Validação realizada com sucesso.");
-    window.location.href = "/src/pages/services.html";
+    window.location.href = "/projeto-frontend-av1/src/pages/services.html";
   }
 }
 
