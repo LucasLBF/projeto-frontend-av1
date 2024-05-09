@@ -49,3 +49,7 @@ p[class="secondary-title"] ~ p:last-child {
   color: #ff5100;
   opacity: 1;
 }
+
+.field-validators {
+  margin-top: 8px;
+}
